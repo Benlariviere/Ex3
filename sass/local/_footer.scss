@@ -1,0 +1,15 @@
+.site-footer{
+    background-color: $color__link;
+    color: white;
+    display: flex;
+    
+    flex-wrap: column;
+    
+    .ligne-footer{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+        display: flex;
+    }
+
+}

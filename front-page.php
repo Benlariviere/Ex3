@@ -51,6 +51,9 @@ get_header();
 				<?php if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ) : 
 						get_template_part( 'template-parts/content', 'cours-carrousel' ); 
 						$chaine_bouton_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
+						ifelse ():
+							get_template_part( 'template-parts/content', 'galerie' ); 
+
 				else :		
 						get_template_part( 'template-parts/content', 'cours-article' ); 
 				endif;	
@@ -65,7 +68,7 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
 
 function convertirTableau(&$tPropriété)

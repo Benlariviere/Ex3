@@ -13,12 +13,12 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="ligne-footer">
-	 		<?php if (is_active_sidebar( 'footer-1' )); ?>
+	 		<?php if (is_active_sidebar( 'footer-1' )): ?>
 				<?php dynamic_sidebar( 'footer-1' ); ?>
 			<?php endif ?>
 		</div>
 		<div>
-			<?php if (is_active_sidebar( 'footer-1' )); ?>
+			<?php if (is_active_sidebar( 'footer-1' )): ?>
 					<?php dynamic_sidebar( 'footer-1' ); ?>
 			<?php endif ?>
 		</div>

@@ -45,13 +45,13 @@ get_header();
 						<?php endif; ?>
 					<?php endif; ?>	
 					<h2><?php echo $tPropriété['typeCours'] ?></h2>
-					<section <?php echo (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ? 'class="carrousel-2"':'class="bloc"'); ?>>
+					<section <?php echo class_composant($tPropriété['typeCours']) ?>>
 				<?php endif ?>	
 
 				<?php if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ) : 
 						get_template_part( 'template-parts/content', 'cours-carrousel' ); 
 						$chaine_bouton_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
-						ifelse ():
+						elseif ($tPropriété ['typeCours'] == 'Projets' ):
 							get_template_part( 'template-parts/content', 'galerie' ); 
 
 				else :		
@@ -61,7 +61,10 @@ get_header();
 			endwhile;?>
 			</section> <!-- fin section cours -->
 		<?php endif; ?>
-
+			<section class="nouvelles">
+			<button id="bout_nouvelles">Afficher les 3 dernières nouvelles</button>
+			<section></section>
+			</section>
 
 	
 
@@ -91,4 +94,17 @@ function convertirTableau(&$tPropriété)
 	$tPropriété['titrePartiel'] = substr($tPropriété['titre'],8,-6);
 	$tPropriété['session'] = substr($tPropriété['titre'], 4,1);
 	$tPropriété['typeCours'] = get_field('type_de_cours');
+}
+
+function class_composant ($typeCours){
+	if(in_array($typeCours, ['Web', 'Jeu', 'Spécifique'])){
+	return 'class="carrousel-2"';
+		}
+	elseif($typeCours == 'Projets'){
+		return 'class="galerie';
+		}
+	else{
+		return 'class="bloc';
+	}
+
 }

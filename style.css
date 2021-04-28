@@ -1168,33 +1168,74 @@ Liste des blocs de cours par type_de_cours
   }
 }
 
+.home .nouvelles {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 4% 2% 2%;
+}
+
 /* local carrousel
 --------------------------------------------- */
 .carrousel {
+  display: flex;
   width: 300vw;
   height: 20vh;
-  display: flex;
   transition: transform .5s;
-  transform: translate(0);
+  justify-content: center;
 }
 
 .carrousel div {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  font-size: clamp(2rem, -0.875rem + 8.333vw, 4rem);
+  color: black;
 }
 
 .carrousel div:nth-of-type(1) {
-  background-color: #00ff37;
+  background-color: #082E10;
 }
 
 .carrousel div:nth-of-type(2) {
-  background-color: #ff9d00;
+  background-color: #537800;
 }
 
 .carrousel div:nth-of-type(3) {
-  background-color: #00aeff;
+  background-color: #A3CF25;
+}
+
+/*-----------------------------------------------------------------
+------------------- Les boutons radios--------------------------*/
+.boutons {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #788A76;
+}
+
+.boutons :nth-child(1),
+.boutons :nth-child(2),
+.boutons :nth-child(3) {
+  margin: 32px;
+  width: 3rem;
+  height: 3rem;
+}
+
+.boutons input {
+  display: none;
+}
+
+#un, #deux, #trois {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17260A;
+  border-radius: 20%;
+  border: none;
 }
 
 /* local slider

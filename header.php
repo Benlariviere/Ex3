@@ -45,7 +45,19 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 		
-			
+		<?php
+		if(is_front_page()): ?>
+				<section class="carrousel">
+					<div>Bienvenue</div>
+					<div>Sur Ma</div>
+					<div>Page</div>
+				</section>
+				<section class="boutons">
+				<button id="un"><input name="radCarrousel" type="radio"></button>
+				<button id="deux" ><input name="radCarrousel"  type="radio"></button>
+				<button id="trois"><input name="radCarrousel"  type="radio"></button>
+				</section>
+				<?php endif ?>
 
 		<nav id="site-navigation" class="main-navigation">
 			<!-- button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32"></button -->

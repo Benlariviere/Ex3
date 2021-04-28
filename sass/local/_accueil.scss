@@ -71,10 +71,12 @@ Liste des blocs de cours par type_de_cours
             text-align : center;
             p {
                 margin: .4rem;
-                font-size: 1rem;
+                font-size: clamp(0.7rem, #{"-0.875rem + 8.333vw"}, 1.1rem);
+
             }
             a {
-                font-size: 1.5rem;
+                font-size: clamp(0.7rem, #{"-0.875rem + 8.333vw"}, 1.8rem);
+
                 font-weight: bold;
                 text-decoration: none;
             }
@@ -100,7 +102,7 @@ Liste des blocs de cours par type_de_cours
     margin: 2% 4% 2% 2%;
     section{
         h2{
-            
+
         }
     }
 }

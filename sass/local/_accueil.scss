@@ -15,8 +15,8 @@ body.home::after{
     left : 0;
     right : 0;
     @include tablet{
-        clip-path : polygon(90% 0, 100% 0, 100% 100% , 80% 100%);
-         background-color: black;
+     //   clip-path : polygon(90% 0, 100% 0, 100% 100% , 80% 100%);
+     //    background-color: black;
     }
 
    z-index: -1;

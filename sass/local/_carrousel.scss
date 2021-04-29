@@ -47,6 +47,7 @@
         margin: 32px;
         width: 3rem;
         height: 3rem;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
 
     input{
@@ -68,7 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #17260A;
+    background-color: lightgrey;
     border-radius: 20%;
     border: none;
     

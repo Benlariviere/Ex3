@@ -16,7 +16,7 @@ body.home::after{
     right : 0;
     @include tablet{
         clip-path : polygon(90% 0, 100% 0, 100% 100% , 80% 100%);
-         background-color: rgb(68, 117, 173);
+         background-color: black;
     }
 
    z-index: -1;
@@ -96,6 +96,11 @@ Liste des blocs de cours par type_de_cours
     }
 }
 
+
+/*------------------------------------------------------------------
+------------------------Section Nouvelles-------------------------*/
+
+
 .home .nouvelles{
     display: flex;
     flex-direction: column;
@@ -107,4 +112,25 @@ Liste des blocs de cours par type_de_cours
     }
 }
 
+.nouvelles{
 
+#bout_nouvelles{
+  /*  display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: limegreen;
+    width: vw;*/
+    width: 20rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    
+                }
+
+}

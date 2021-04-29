@@ -30,15 +30,27 @@
                 margin : 2%;
             }
             .slide__info{
-                display : flex;
-                flex-direction: column;
-                p{
-                    font-size : .8rem
-                }
-                a{
-                    font-size : 1.2rem;
-                    text-decoration: none;
-                }
+                margin: 2%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    margin-left: 0;
+                    p{
+                        font-size: .8rem;
+                        font-weight: bold;
+                        justify-content: center;
+                        text-align: justify;
+                        color: #404040;
+                    }
+                    a{
+                        font-size: 1.5rem;
+                        justify-content: center;
+                        font-size: clamp(2rem, #{"-0.875rem + 2.333vw"}, 2.3rem);
+                        
+
+                    }
             }
             &:nth-of-type(1){
                 background-color :#17260A;

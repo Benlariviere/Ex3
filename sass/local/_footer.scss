@@ -1,12 +1,12 @@
 .site-footer{
-    background-color: $color__link;
+    background-color: black;
     color: white;
     display: flex;
     
     flex-wrap: column;
     
     .ligne-footer{
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;
         display: flex;

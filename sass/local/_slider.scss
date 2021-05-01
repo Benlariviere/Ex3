@@ -1,4 +1,6 @@
 .carrousel-2 {
+    
+
     width: 300vw;
     height: 30vh;
     display : flex;
@@ -7,10 +9,14 @@
     flex-wrap: nowrap !important;
 
     .slide__conteneur {
-        display : flex;
-        justify-content: center;
-        align-items: center;
-        width : 50vw;
+        @include tablet{
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            width : 50vw;
+        }
+        width: 20%;
+        
         .slide {
             width : 100%;
             display : flex;

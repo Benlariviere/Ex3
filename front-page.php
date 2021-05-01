@@ -37,11 +37,14 @@ get_header();
 					if ("XXXXXX" != $precedent)	: ?>
 						</section>
 						<?php if (in_array($precedent, ['Web', 'Jeu', 'Spécifique','Image 2d/3d', 'Conception','Projet'])) : ?>
+							
 							<section class="ctrl-carrousel">
 								<?php echo $chaine_bouton_radio;
 								$chaine_bouton_radio = '';
 								 ?>		
+								 
 							</section>
+							<div id="division"><div id="division2"></div></div>
 						<?php endif; ?>
 					<?php endif; ?>	
 					<h2><?php echo $tPropriété['typeCours'] ?></h2>
@@ -61,6 +64,17 @@ get_header();
 			endwhile;?>
 			</section> <!-- fin section cours -->
 		<?php endif; ?>
+
+			<!------------Formulaire-------------->
+
+			<section class="admin-rapide">
+				<h3>Ajouter un article de catégorie " Nouvelles "</h3>
+					<input type="text" name="title" placeholder="Titre">
+					<textarea name="content"></textarea>
+					<button id='bout-rapide'>Créer une nouvelle</button>
+			</section>
+
+
 			<section class="nouvelles">
 			<button id="bout_nouvelles">Afficher les 3 dernières nouvelles</button>
 			<section></section>

@@ -41,8 +41,22 @@ body.home::after{
     font-size : clamp(.6rem, #{"-0.875rem + 8.333vw"},3rem);
 }
 
+#division{
+    width: 100vw;
+    height: 3vh;
+    background-color: black;
 
+    
+}
+#division2{
+    display: flex;
+    width: 90vw;
+    height: 2vh;
+    background-color: blue;
+    align-items: center;
 
+    
+}
 
 /* --------------------------------------------------------------------------------------- 
 Liste des blocs de cours par type_de_cours

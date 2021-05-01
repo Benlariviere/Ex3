@@ -1138,9 +1138,11 @@ body.home::after {
 
 #division2 {
   display: flex;
-  width: 90vw;
+  width: 95vw;
   height: 2vh;
-  background-color: blue;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-color: grey;
   align-items: center;
 }
 
@@ -1418,17 +1420,17 @@ Le bouton buger
 }
 
 #burger div:nth-of-type(1) {
-  background-color: #3ddada;
+  background-color: #734822;
   clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
 }
 
 #burger div:nth-of-type(2) {
-  background-color: #3d79da;
+  background-color: #537800;
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
 }
 
 #burger div:nth-of-type(3) {
-  background-color: #dab03d;
+  background-color: #734822;
   clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
 }
 

@@ -70,7 +70,7 @@ get_header();
 			<section class="admin-rapide">
 				<h3>Ajouter un article de catégorie " Nouvelles "</h3>
 					<input type="text" name="title" placeholder="Titre">
-					<textarea name="content"></textarea>
+					<textarea name="content" placeholder="Écriver votre nouvelle"></textarea>
 					<button id='bout-rapide'>Créer une nouvelle</button>
 			</section>
 
@@ -115,10 +115,10 @@ function class_composant ($typeCours){
 	return 'class="carrousel-2"';
 		}
 	elseif($typeCours == 'Projets'){
-		return 'class="galerie';
+		return 'class="galerie"';
 		}
 	else{
-		return 'class="bloc';
+		return 'class="bloc"';
 	}
 
 }

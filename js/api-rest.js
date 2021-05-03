@@ -52,8 +52,11 @@ bout_ajout.addEventListener('mousedown' , function(){
     creerArticle.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
     creerArticle.send(JSON.stringify(monArticle))
     creerArticle.onreadystatechange = function(){
+
         if(creerArticle.readyState == 4){
+
             if(creerArticle.status == 201){
+                
                 document.querySelector('.admin-rapide [name="title"]').value = ''
                 document.querySelector('.admin-rapide [name="content"]').value = ''
             }
